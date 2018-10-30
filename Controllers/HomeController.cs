@@ -10,22 +10,13 @@ namespace SICORA.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+
+        public IActionResult Login()
         {
             return View();
         }
-
-        public IActionResult About()
+        public IActionResult Principal()
         {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
             return View();
         }
 
@@ -33,5 +24,7 @@ namespace SICORA.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        
     }
 }
+
