@@ -1,0 +1,11 @@
+C:\Users\paolo_000\Desktop\SICORA\SICORA\bin\Debug\netcoreapp2.0\SICORA.deps.json
+C:\Users\paolo_000\Desktop\SICORA\SICORA\bin\Debug\netcoreapp2.0\SICORA.runtimeconfig.json
+C:\Users\paolo_000\Desktop\SICORA\SICORA\bin\Debug\netcoreapp2.0\SICORA.runtimeconfig.dev.json
+C:\Users\paolo_000\Desktop\SICORA\SICORA\bin\Debug\netcoreapp2.0\SICORA.dll
+C:\Users\paolo_000\Desktop\SICORA\SICORA\bin\Debug\netcoreapp2.0\SICORA.pdb
+C:\Users\paolo_000\Desktop\SICORA\SICORA\obj\Debug\netcoreapp2.0\SICORA.csprojAssemblyReference.cache
+C:\Users\paolo_000\Desktop\SICORA\SICORA\obj\Debug\netcoreapp2.0\SICORA.csproj.CoreCompileInputs.cache
+C:\Users\paolo_000\Desktop\SICORA\SICORA\obj\Debug\netcoreapp2.0\SICORA.AssemblyInfoInputs.cache
+C:\Users\paolo_000\Desktop\SICORA\SICORA\obj\Debug\netcoreapp2.0\SICORA.AssemblyInfo.cs
+C:\Users\paolo_000\Desktop\SICORA\SICORA\obj\Debug\netcoreapp2.0\SICORA.dll
+C:\Users\paolo_000\Desktop\SICORA\SICORA\obj\Debug\netcoreapp2.0\SICORA.pdb
