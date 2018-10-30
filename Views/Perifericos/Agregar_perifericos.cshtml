@@ -227,7 +227,7 @@ footer .column1, .column2, .column3 {
     
        <p size style="color:white" >ID Perifericos</p>
 				
-				<input type="text" placeholder="">
+				<input type="text" placeholder="ID" pattern="[A-Za-z]{2-25}" required>
                 <br> <br>
 	    <p style="color:white">Nombre</p>
                 
@@ -235,15 +235,15 @@ footer .column1, .column2, .column3 {
                 <br> <br>
         <p size style="color:white" >Descripcion</p>
 				
-				<input type="text" placeholder="">
+				<input type="text" placeholder="Descripcion" pattern="[A-Za-z]{2-25}" required>
                 <br> <br>
 	    <p style="color:white">Link imagen</p>
                 
-				<input type="text" >
+				<input type="text" placeholder="ejem:www.imagen.com" pattern="[A-Za-z]{2-25}" required >
                 <br> <br>
         <p size style="color:white" >Precio</p>
 				
-				<input type="text" placeholder="">
+				<input type="text" pattern="[0-9]{11}"  placeholder="Precio" required>
                 <br> <br>
 	    
 
