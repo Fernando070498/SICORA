@@ -8,40 +8,34 @@
       body{
           background-color:rgb(41, 43, 43);
       }
+      #formulario h2{
+          text-align: center;
+          color: white;
+      }
+      #formulario p{
+          text-align: center;
+          color: white;   
+      }
+      
+      
 </style>
 
-<h4>INGRESAR JUEGO</h4>
- 
-<section id="blog">
-    
-    
-       <p size style="color:white" >ID: </p>
-				
-				<input type="text" placeholder="">
-                <br> <br>
-	    <p style="color:white">Nombre: </p>
-                
-				<input type="text" >
-                <br> <br>
-        <p size style="color:white" >Descripcion: </p>
-				
-				<input type="text" placeholder="">
-                <br> <br>
-	    <p style="color:white">Link:</p>
-                
-				<input type="text" >
-                <br> <br>
-        <p size style="color:white" >Imagen:</p>
-				
-				<input type="text" placeholder="">
-                <br> <br>
-	     <p size style="color:white" >Precio: :</p>
-				
-				<input type="text" placeholder="">
-                <br> <br>
 
-
-                          
-        
-    </div>
+<section id="formulario">
+<h2>REGISTRAR NUEVO JUEGO</h2>
+<form name='form' id='form' method='post' action='enviar.php' target='_self' enctype="multipart/form-data"> 
+        <p><label for="id">ID del juego:</label>
+        <input id="id" type="text" name="ID" placeholder="Codigo de 6 digitos" required /><br/></p>
+        <p><label for="nombre">Nombre:</label>
+        <input id="Nombre" type="text" name="Nombre" placeholder="Nombre" required /><br/></p>
+        <p><label for="descripcion">Descripción:</label>
+        <input id="descripcion" type="text" name="descripcion" placeholder="Breve descripción" required /><br/></p>
+        <p><label for="link">Link del trailer:</label>
+        <input id="link" type="url" name="descripcion" placeholder="Url" required /><br/></p>
+        <p><label for="imagen">Imagen:</label>
+        <input id="imagen" type="url" name="descripcion" placeholder="Url" required /><br/></p>
+        <p><label for="precio">Precio:</label>
+        <input id="precio" name="precio" placeholder="Precio" required><br/></p>
+        <p><input id="submit" type="submit" name="submit" value="Registrar" /></p>
+</form>
 </section>
