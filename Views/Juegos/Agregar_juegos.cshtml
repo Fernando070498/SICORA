@@ -1,5 +1,5 @@
 <style>
-*{
+      *{
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
@@ -7,35 +7,98 @@
         }
       body{
           background-color:rgb(41, 43, 43);
+          font-family: monospace;
+      }  
+
+      form{
+        width: 450px;
+        margin: auto;
+        background: rgba(0,0,0,0.4);
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        border-radius: 7px;
       }
-      #formulario h2{
-          text-align: center;
-          color: white;
+
+      h2{
+              color: white;
+              text-align: center;
+              margin: 0;
+              font-size: 30px;
+              font-family: monospace;
+              margin-bottom: 20px;
       }
-      #formulario p{
-          text-align: center;
-          color: white;   
+
+      input, textarea{
+              width: 100%;
+              margin-bottom: 20px;
+              padding: 7px;
+              box-sizing: border-box;
+              font-size: 17px;
+              border: none;
       }
-      
-      
+
+      textarea{
+              min-height: 100px;
+              max-height: 200px;
+              max-width: 100%;
+      }
+
+      #boton{
+           background: red;
+           color: white;   
+           padding: 15px;
+      }
+      .guardar{
+              background: gray;
+              color: white;
+              padding: 7px;
+              border: none;
+      }
+        .modal-content{
+                background:  rgba(0,0,0,0.9);
+                color: white;
+        }
+        .close{
+                color: white;
+        }     
 </style>
 
+<body>
+        <form action="">
+                <h2>REGISTRAR NUEVO JUEGO</h2>
+                <input type="text" name="ID" placeholder="ID del juego">
+                <input type="text" name="Nombre" placeholder="Nombre">
+                <input type="url" name="Link" placeholder="Url del trailer">
+                <input type="url" name="Img" placeholder="Url de la imagen">
+                <input type="text" name="Precio" placeholder="Precio">
+                <textarea name="Descripción" placeholder="Descripción"></textarea>
+                <input type="button" data-toggle="modal" data-target="#miventana" value="Registrar" id="boton">
+        </form>
 
-<section id="formulario">
-<h2>REGISTRAR NUEVO JUEGO</h2>
-<form name='form' id='form' method='post' action='enviar.php' target='_self' enctype="multipart/form-data"> 
-        <p><label for="id">ID del juego:</label>
-        <input id="id" type="text" name="ID" placeholder="Codigo de 6 digitos" required /><br/></p>
-        <p><label for="nombre">Nombre:</label>
-        <input id="Nombre" type="text" name="Nombre" placeholder="Nombre" required /><br/></p>
-        <p><label for="descripcion">Descripción:</label>
-        <input id="descripcion" type="text" name="descripcion" placeholder="Breve descripción" required /><br/></p>
-        <p><label for="link">Link del trailer:</label>
-        <input id="link" type="url" name="descripcion" placeholder="Url" required /><br/></p>
-        <p><label for="imagen">Imagen:</label>
-        <input id="imagen" type="url" name="descripcion" placeholder="Url" required /><br/></p>
-        <p><label for="precio">Precio:</label>
-        <input id="precio" name="precio" placeholder="Precio" required><br/></p>
-        <p><input id="submit" type="submit" name="submit" value="Registrar" /></p>
-</form>
-</section>
+        <div class="modal fade" id="miventana" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4>Lista de juegos</h4>
+                                </div>
+                                <div class="modal-body">
+                                        <tr>
+                                                <td>ID</td>
+                                                <td>Nombre</td>
+                                                <td>Link</td>
+                                                <td>Imagen</td>
+                                                <td>Precio</td>
+                                                <td>Descripción</td>
+                                        </tr>
+                                </div>
+                                <div class="modal-footer">
+                                        <button type="button" class="guardar" data-dismiss="modal">Guardar</button>
+                                </div>
+
+                        </div>
+
+                </div>
+        </div>
+</body>
