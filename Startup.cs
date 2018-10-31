@@ -6,8 +6,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using SICORA.Models;
+using MySql.Data.EntityFrameworkCore.Extensions;
 
-namespace SICORA
+
+namespace demomvc
 {
     public class Startup
     {
@@ -22,6 +26,11 @@ namespace SICORA
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddDbContext<MvcContext>(options =>
+                  //options.UseSqlite(@"Data Source=/app/MvcMovie.db")
+                  options.UseMySQL("server=localhost;database=library4;user=root;password=MySQL;port=3306")
+
+                  );            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,7 +51,7 @@ namespace SICORA
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Login}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

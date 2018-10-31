@@ -1,3 +1,4 @@
+@model IEnumerable<SICORA.Models.Prueba_bd>
 @{
     ViewData["Title"] = "CONEXION";
 }
@@ -55,10 +56,37 @@
                         <input type="submit" value="MOSTRAR" class="btn btn-primary" />
                         <input type="submit" value="ELIMINAR" class="btn btn-primary" />
                         <input type="submit" value="ACTUALIZAR" class="btn btn-primary" />
-                    </td>
-                    
+                    </td>                  
                     
                 </tr>
+
+
+
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                           @Html.DisplayNameFor(model => model.Nom_juego)
+                     </th>
+                        <th></th>
+                    </tr>
+                 </thead>
+                <tbody>
+                @foreach (var item in Model) {
+                     <tr>
+                        <td>
+                             @Html.DisplayFor(modelItem => item.Nom_juego)
+                        </td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                         </td>
+                    </tr>
+                }
+                </tbody>
+                </table>
+
+                
+               
             </table>
         </div>
     </form>
