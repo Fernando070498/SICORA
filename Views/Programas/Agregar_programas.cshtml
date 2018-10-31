@@ -11,6 +11,14 @@
       body{
           background-color:rgb(41, 43, 43);
       }
+      #formulario h2{
+          text-align: center;
+          color: white;
+      }
+      #formulario p{
+          text-align: center;
+          color: white;   
+      }
       .item {
       display: block;
       width: 100%;
@@ -222,35 +230,21 @@ footer .column1, .column2, .column3 {
 <body>
 
 
-<section id="blog">
-    <h3 class="titulo-container">Agregar Programas</h3>
-    
-       <p size style="color:white" >ID Programa</p>
-				
-				<input type="text" placeholder="">
-                <br> <br>
-	    <p style="color:white">Nombre</p>
-                
-				<input type="text" >
-                <br> <br>
-        <p size style="color:white" >Descripcion</p>
-				
-				<input type="text" placeholder="">
-                <br> <br>
-	    <p style="color:white">Link imagen</p>
-                
-				<input type="text" >
-                <br> <br>
-        <p size style="color:white" >Precio</p>
-				
-				<input type="text" placeholder="">
-                <br> <br>
-	    
-
-
-                          
-        
-    </div>
+<section id="formulario">
+<h2>REGISTRAR NUEVO PROGRAMA</h2>
+<form name='form' id='form' method='post' action='enviar.php' target='_self' enctype="multipart/form-data"> 
+        <p><label for="id">ID del Programa:</label>
+        <input id="id" type="text" name="ID" placeholder="Codigo de 6 digitos" style="color:black" required /><br/></p>
+        <p><label for="nombre">Nombre:</label>
+        <input id="Nombre" type="text" name="Nombre" placeholder="Nombre" style="color:black" required /><br/></p>
+        <p><label for="descripcion">Descripción:</label>
+        <input id="descripcion" type="text" name="descripcion" placeholder="Breve descripción" style="color:black" required /><br/></p>
+        <p><label for="imagen">Imagen:</label>
+        <input id="imagen" type="url" name="descripcion" placeholder="Url" style="color:black" required /><br/></p>
+        <p><label for="precio">Precio:</label>
+        <input id="precio" name="precio" placeholder="Precio" style="color:black" required><br/></p>
+        <p><input id="submit" type="submit" name="submit" value="Registrar" /></p>
+</form>
 </section>
 
 
