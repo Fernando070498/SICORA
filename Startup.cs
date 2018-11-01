@@ -11,7 +11,7 @@ using SICORA.Models;
 using MySql.Data.EntityFrameworkCore.Extensions;
 
 
-namespace demomvc
+namespace SICORA
 {
     public class Startup
     {
@@ -51,7 +51,7 @@ namespace demomvc
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Login}/{id?}");
             });
         }
     }
