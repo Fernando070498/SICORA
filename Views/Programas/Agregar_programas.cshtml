@@ -1,8 +1,5 @@
-@{
-    ViewData["Title"] = "Agregar Programas";
-}
 <style>
-        *{
+      *{
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
@@ -10,310 +7,96 @@
         }
       body{
           background-color:rgb(41, 43, 43);
-      }
-      #formulario h2{
-          text-align: center;
-          color: white;
-      }
-      #formulario p{
-          text-align: center;
-          color: white;   
-      }
-      .item {
-      display: block;
-      width: 100%;
-      height: 600px;
-}
-.item img {
-      height: 100%;
-      width: 100%;
-}
-figure{
-    background-color: black;
-}
-#blog h4{
-    text-align: center;
-    color: #999;
-}
-#blog .contenedor{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-#blog article {
-    margin: 18px;
-    background-color: #111;
-}
-#blog img{
-    width: 100%;
-    width: 290px;
-    height: 250px;  
-    
-}
-#info {
-    background:rgb(19, 18, 18);
-    color: #fff;
-    text-align: center;
-}
-#info .contenedor{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.info-pro{
-    margin: 40px;
-}
-.info-pro img{
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 7px solid #fff;
-}
-footer{
-    width: 100%;
-    background: #202020;
-    padding: 40px;
-    color: white;
-    
-}
-.container-footer-all{
-    width: 100%;
-    max-width: 1600px;
-    margin: auto;
-}
-.container-body{
-    display: flex;
-    justify-content: center;
-}
-.column1{
-    max-width: 400px;
-}
-.column1 h1{
-    font-size: 22px;
-}
-.column1 p{
-    font-size: 14px;
-    color: #C7C7C7;
-    margin-top: 20px;
-}
-.column2{
-    max-width: 400px;
-}
-.column2 h1{
-    font-size: 22px;
-}
-.row {
-    margin-top 20px;
-    display: flex;
-}
-.row img{
-    width: 35px;
-    height: 36px;
-}
-.row label{
-    margin-top:10px;
-    margin-left: 20px;
-    color:  #C7C7C7;
-}
-.column3{
-    max-width: 400px;
-}
-.column3 h1{
-    font-size: 22px;
-}
-.row2{
-    margin-top: 20px;
-}
-.row2 label{
-    margin-top: 10px;
-    margin-left: 20px;
-    max-width: 140px;
-}
-.container-footer{
-    width: 100%;
-    background: #101010;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-}
-.copyright{
-    color: #C7C7C7;
-}
-.copyrigth a{
-    text-decoration: none;
-    color:white;
-    font-weight: bold;
-}
-.information a{
-    text-decoration: none;
-    color: white;
-}
-footer .column1, .column2, .column3 {
-    margin: 65px;
-}
-.img1{
-    width: 100%;
-    width: 290px;
-    
-}
-.info-img{
-    width: 100%;
-    width: 290px;
-    height: 250px;
-    position: absolute;
-    background-color: #101010;
-    opacity: 0;
-    -webkit-transition: opacity 0.2s;
-}
-.info-img:hover{
-    opacity: 1;
-}
-.info-1{
-    margin-top: 30px;
-    margin-left: 25px;
-    margin-right: 25px;
-    text-align: center;
-    color: white;
-    opacity: 1;
-}
-.titulo-container{
-    text-align: center;
-    color: white;
-    width: 100%;
-    background: #101010;
-    padding-bottom: 25px;
-    padding-top: 25px;
-}
-.hr{
-    margin-top: 30px;
-}
-.trailer{
-    text-align: center;
-    
-}
-.button1:hover {
-    background-color: white;
-    color: black;
-    text-decoration-line: none;
-    font-family: Arial, Helvetica, sans-serif;
-}
+          font-family: monospace;
+      }  
 
-.button1 {
-    background-color: red;
-    color: white;
-    border: 2px solid red;
-    padding: 15px;
-    padding-left: 42%;
-    padding-right: 43%;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration-line: none;
-}
-.button2{
-    background-color: red;
-    color: white;
-    border: 2px solid red;
-    padding: 15px;
-    padding-left: 40%;
-    padding-right: 39.8%;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration-line: none;
-}
-.button2:hover{
-    background-color: white;
-    color: black;
-    text-decoration-line: none;
-    font-family: Arial, Helvetica, sans-serif;
-}
+      form{
+        width: 450px;
+        margin: auto;
+        background: rgba(0,0,0,0.4);
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        border-radius: 7px;
+      }
 
-    </style> 
+      h2{
+              color: white;
+              text-align: center;
+              margin: 0;
+              font-size: 30px;
+              font-family: monospace;
+              margin-bottom: 20px;
+      }
+
+      input, textarea{
+              width: 100%;
+              margin-bottom: 20px;
+              padding: 7px;
+              box-sizing: border-box;
+              font-size: 17px;
+              border: none;
+      }
+
+      textarea{
+              min-height: 100px;
+              max-height: 200px;
+              max-width: 100%;
+      }
+
+      #boton{
+           background: red;
+           color: white;   
+           padding: 15px;
+      }
+      .guardar{
+              background: gray;
+              color: white;
+              padding: 7px;
+              border: none;
+      }
+        .modal-content{
+                background:  rgba(0,0,0,0.9);
+                color: white;
+        }
+        .close{
+                color: white;
+        }     
+</style>
+
 <body>
+        <form action="">
+                <h2>REGISTRAR NUEVO PROGRAMA</h2>
+                <input type="text" name="ID" placeholder="ID del programa">
+                <input type="text" name="Nombre" placeholder="Nombre">
+                <input type="url" name="Img" placeholder="Url de la imagen">
+                <input type="text" name="Precio" placeholder="Precio">
+                <textarea name="Descripción" placeholder="Descripción"></textarea>
+                <input type="button" data-toggle="modal" data-target="#miventana" value="Registrar" id="boton">
+        </form>
 
+        <div class="modal fade" id="miventana" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4>Lista de Programas/h4>
+                                </div>
+                                <div class="modal-body">
+                                        <tr>
+                                                <td>ID</td>
+                                                <td>Nombre</td>
+                                                <td>Imagen</td>
+                                                <td>Precio</td>
+                                                <td>Descripción</td>
+                                        </tr>
+                                </div>
+                                <div class="modal-footer">
+                                        <button type="button" class="guardar" data-dismiss="modal">Guardar</button>
+                                </div>
 
-<section id="formulario">
-<h2>REGISTRAR NUEVO PROGRAMA</h2>
-<form name='form' id='form' method='post' action='enviar.php' target='_self' enctype="multipart/form-data"> 
-        <p><label for="id">ID del Programa:</label>
-        <input id="id" type="text" name="ID" placeholder="Codigo de 6 digitos" style="color:black" required /><br/></p>
-        <p><label for="nombre">Nombre:</label>
-        <input id="Nombre" type="text" name="Nombre" placeholder="Nombre" style="color:black" required /><br/></p>
-        <p><label for="descripcion">Descripción:</label>
-        <input id="descripcion" type="text" name="descripcion" placeholder="Breve descripción" style="color:black" required /><br/></p>
-        <p><label for="imagen">Imagen:</label>
-        <input id="imagen" type="url" name="descripcion" placeholder="Url" style="color:black" required /><br/></p>
-        <p><label for="precio">Precio:</label>
-        <input id="precio" name="precio" placeholder="Precio" style="color:black" required><br/></p>
-        <p><input id="submit" type="submit" name="submit" value="Registrar" /></p>
-</form>
-</section>
+                        </div>
 
-
-
-
-
-
-
-
-
-
-
-<footer>
-        <div class="container-body">
-            <div class="column1">
-                <h1>Informacion de SICORA</h1>
-                <p>Esta empresa se dedica a la venta de juegos,periféricos,programas e información de eventos
-                    asi como tambien muestra la calidad de nuestros productos con la compra de figuras emblematicas de los
-                    E-sport.
-                </p>
-            </div>
-            <div class="column2">
-                <h1>Redes Sociales</h1>
-                <div class="row">
-                    <img src="~/images/icoface.png">
-                    <label>Siguenos en Facebook</label>
                 </div>
-                <div class="row">
-                    <img src="~/images/icotwitter.png">
-                    <label>Siguenos en Twitter</label>
-                </div>
-                <div class="row">
-                    <img src="~/images/icoinstagram.png">
-                    <label>Siguenos en Instagram</label>
-                </div>
-                <div class="row">
-                    <img src="~/images/icongoogle.png">
-                    <label>Siguenos en Google Plus</label>
-                </div>
-            </div>
-            <div class="column3">
-                <h1>Informacion Contactos</h1>
-                <div class="row2">
-                    <label>Usmp, Lafontana</label>
-                </div>
-                <div class="row2">
-                    <label>999-999-999</label>
-                </div>
-                <div class="row2">
-                    <label>Daniel Manrique Carbonel</label>
-                </div>
-            </div>
         </div>
-
-
-        <div class="container-footer">  
-        
-
-            <div class="copyrigth">
-                ® 2018 Todos los Derechos Reservados <a href="#" > SICORA</a>
-            </div>
-            <div class="information">
-                <a href="#">Informacion Compañia</a>|
-                <a href="#">Privacion y Politica</a>|
-                <a href="#">Terminos y Condiciones</a>
-            </div>
-        </div>
-    </footer>
-
-    
 </body>
-</html>
