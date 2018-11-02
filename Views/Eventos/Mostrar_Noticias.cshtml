@@ -1,0 +1,294 @@
+@{
+    ViewData["Title"] = "Mostrar_Eventos";
+}
+
+<style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+      body{
+          background-color:rgb(41, 43, 43);
+      }
+      .item {
+      display: block;
+      width: 100%;
+      height: 600px;
+}
+.item img {
+      height: 100%;
+      width: 100%;
+}
+figure{
+    background-color: black;
+}
+#blog h4{
+    text-align: center;
+    color: #999;
+}
+#blog .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#blog article {
+    margin: 18px;
+    background-color: #111;
+}
+#blog img{
+    width: 100%;
+    width: 290px;
+    height: 250px;  
+    
+}
+#info {
+    background:rgb(19, 18, 18);
+    color: #fff;
+    text-align: center;
+}
+#info .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.info-pro{
+    margin: 40px;
+}
+.info-pro img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+}
+footer{
+    width: 100%;
+    background: #202020;
+    padding: 40px;
+    color: white;
+    
+}
+.container-footer-all{
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+}
+.container-body{
+    display: flex;
+    justify-content: center;
+}
+.column1{
+    max-width: 400px;
+}
+.column1 h1{
+    font-size: 22px;
+}
+.column1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+.column2{
+    max-width: 400px;
+}
+.column2 h1{
+    font-size: 22px;
+}
+.row {
+    margin-top 20px;
+    display: flex;
+}
+.row img{
+    width: 35px;
+    height: 36px;
+}
+.row label{
+    margin-top:10px;
+    margin-left: 20px;
+    color:  #C7C7C7;
+}
+.column3{
+    max-width: 400px;
+}
+.column3 h1{
+    font-size: 22px;
+}
+.row2{
+    margin-top: 20px;
+}
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+.container-footer{
+    width: 100%;
+    background: #101010;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+}
+.copyright{
+    color: #C7C7C7;
+}
+.copyrigth a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+.information a{
+    text-decoration: none;
+    color: white;
+}
+footer .column1, .column2, .column3 {
+    margin: 65px;
+}
+.img1{
+    width: 100%;
+    width: 290px;
+    
+}
+.info-img{
+    width: 100%;
+    width: 290px;
+    height: 250px;
+    position: absolute;
+    background-color: #101010;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s;
+}
+.info-img:hover{
+    opacity: 1;
+}
+.info-1{
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    color: white;
+    opacity: 1;
+}
+.titulo-container{
+    text-align: center;
+    color: white;
+    width: 100%;
+    background: #101010;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.hr{
+    margin-top: 30px;
+}
+.trailer{
+    text-align: center;
+    
+}
+.button1:hover {
+    background-color: white;
+    color: black;
+    text-decoration-line: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button1 {
+
+    background-color: red;
+    background-color:red;
+
+    color: white;
+    border: 2px solid red;
+    padding: 15px;
+    padding-left: 42%;
+    padding-right: 43%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration-line: none;
+}
+.button2{
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    padding: 15px;
+    padding-left: 40%;
+    padding-right: 39.8%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration-line: none;
+}
+.button2:hover{
+    background-color: white;
+    color: black;
+    text-decoration-line: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+    </style> 
+
+    <body>
+        <h3 class="titulo-container">Eventos </h3>
+        <br>
+<div class="column1"><img src="~/images/w1.jpg"> 
+<label>Fnatic se enfrentara a Invictus Gaming en la gran final del Mundial 2018 de League of legends</label>
+</div>
+<br>
+        <footer>
+        <div class="container-body">
+            <div class="column1">
+                <h1>Informacion de SICORA</h1>
+                <p>Esta empresa se dedica a la venta de juegos,periféricos,programas e información de eventos
+                    asi como tambien muestra la calidad de nuestros productos con la compra de figuras emblematicas de los
+                    E-sport.
+                </p>
+            </div>
+            <div class="column2">
+                <h1>Redes Sociales</h1>
+                <div class="row">
+                    <img src="~/images/icoface.png">
+                    <label>Siguenos en Facebook</label>
+                </div>
+                <div class="row">
+                    <img src="~/images/icotwitter.png">
+                    <label>Siguenos en Twitter</label>
+                </div>
+                <div class="row">
+                    <img src="~/images/icoinstagram.png">
+                    <label>Siguenos en Instagram</label>
+                </div>
+                <div class="row">
+                    <img src="~/images/icongoogle.png">
+                    <label>Siguenos en Google Plus</label>
+                </div>
+            </div>
+            <div class="column3">
+                <h1>Informacion Contactos</h1>
+                <div class="row2">
+                    <label>Usmp, Lafontana</label>
+                </div>
+                <div class="row2">
+                    <label>999-999-999</label>
+                </div>
+                <div class="row2">
+                    <label>Daniel Manrique Carbonel</label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-footer">  
+        
+
+            <div class="copyrigth">
+                ® 2018 Todos los Derechos Reservados <a href="#" > SICORA</a>
+            </div>
+            <div class="information">
+                <a href="#">Informacion Compañia</a>|
+                <a href="#">Privacion y Politica</a>|
+                <a href="#">Terminos y Condiciones</a>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+    
