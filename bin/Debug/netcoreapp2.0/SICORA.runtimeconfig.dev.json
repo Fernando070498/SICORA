@@ -1,8 +1,9 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\HP-ENVY\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\HP-ENVY\\.nuget\\packages",
+      "C:\\Users\\Sebas\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Sebas\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback",
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ]
   }

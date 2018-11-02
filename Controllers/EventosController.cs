@@ -14,5 +14,9 @@ namespace SICORA.Controllers
         {
             return View();
         } 
+        public IActionResult Mostrar_Noticias()
+        {
+            return View();
+        } 
     }
 }
