@@ -155,7 +155,7 @@ footer .column1, .column2, .column3 {
     width: 290px;
     height: 250px;
     position: absolute;
-    background-color: #101010;
+    background-color: rgba(0,0,0,0.8);
     opacity: 0;
     -webkit-transition: opacity 0.2s;
 }
@@ -280,6 +280,23 @@ footer .column1, .column2, .column3 {
 .cal h4{
     margin-top: 18px;
 }
+.modal-content{
+                background:  rgba(0,0,0,0.9);
+                color: white;
+        }
+.close{
+                color: white;
+        }  
+.button{
+    padding: 20px;
+    margin-left: 80px;
+    margin-top: 100px;
+    border: none;
+    background: none;
+    color: white;
+    font-size: large;
+    font-family: cursive;
+}
 
 
     </style> 
@@ -297,16 +314,15 @@ footer .column1, .column2, .column3 {
         <br>
            
             
-            <section id="blog">
+<section id="blog">
     <div class="contenedor">
         <article>
             <div class="img1">
                 <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p>
+                <input type="button" data-toggle="modal" data-target="#miventana" value="DETALLES"  class="button">
                 </div>
                 </div>
-                <img src="~/images/overwatch1.jpg"><br>
+                <img src="~/images/clash.jpg"><br>
                 <div class="cal">
                     <img src="~/images/calendar-icon.png">
                     <h4>Sabado 06:30 p.m.</h4>
@@ -317,192 +333,187 @@ footer .column1, .column2, .column3 {
         <article>
             <div class="img1">
                 <div class="info-img">
-                <p class="info-1">Es un videojuego de acción multijugador donde el 
-                    objetivo primario será sobrevivir y matar a nuestros competidores. </p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
+                <input type="button" data-toggle="modal" data-target="#miventana1" value="DETALLES"  class="button">
                 </div>
                 </div>
-            <img src="~/images/pubg1.jpg">
+            <img src="~/images/cosplay.jpg">
+            <div class="cal">
+                    <img src="~/images/calendar-icon.png">
+                    <h4>Sabado 03:00 p.m.</h4>
+                </div>
+                <h4>Evento de cosplay</h4>
+            <div class="cond">Costo: S/30</div>
+        </article>
+        <article>
+            <div class="img1">
+                <div class="info-img">
+                <input type="button" data-toggle="modal" data-target="#miventana2" value="DETALLES"  class="button">
+                </div>
+                </div>
+            <img src="~/images/Disruptive_Design.png">
             <div class="cal">
                     <img src="~/images/calendar-icon.png">
                     <h4>Sabado 06:30 p.m.</h4>
                 </div>
-                <h4>League of legend evento clash </h4>
+                <h4>Asesoría de Disruptive Design </h4>
+            <div class="cond">Costo: S/20</div>
+        </article>
+        <article>
+            <div class="img1">
+                <div class="info-img">
+                <input type="button" data-toggle="modal" data-target="#miventana3" value="DETALLES"  class="button">
+                </div>
+                </div>
+                <img src="~/images/dota2.jpg">
+            <div class="cal">
+                    <img src="~/images/calendar-icon.png">
+                    <h4>Lunes 06:30 p.m.</h4>
+                </div>
+                <h4>The international Dota 2 </h4>
             <div class="cond">Gratis</div>
         </article>
         <article>
             <div class="img1">
                 <div class="info-img">
-                <p class="info-1">Encontraremos a un experimentado Peter Parker, más capacitado en su 
-            lucha contra el crimen organizado de la ciudad de Nueva York. </p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
+                <input type="button" data-toggle="modal" data-target="#miventana4" value="DETALLES"  class="button">
                 </div>
                 </div>
-            <img src="~/images/spiderman1.jpg">
+                <img src="~/images/Halloween-overwatch.jpg">
             <div class="cal">
                     <img src="~/images/calendar-icon.png">
-                    <h4>Sabado 06:30 p.m.</h4>
+                    <h4>Viernes 12:00 p.m.</h4>
                 </div>
-                <h4>League of legend evento clash </h4>
+                <h4>Evento de halloween en overwatch </h4>
             <div class="cond">Gratis</div>
         </article>
         <article>
             <div class="img1">
                 <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
+                <input type="button" data-toggle="modal" data-target="#miventana5" value="DETALLES"  class="button">
                 </div>
                 </div>
-                <img src="~/images/Persona5.jpg">
+                <img src="~/images/tarjeta_de_video.jpg">
             <div class="cal">
                     <img src="~/images/calendar-icon.png">
-                    <h4>Sabado 06:30 p.m.</h4>
+                    <h4>Sabado 01:30 p.m.</h4>
                 </div>
-                <h4>League of legend evento clash </h4>
+                <h4>Sorteo de una tarjeta de video</h4>
             <div class="cond">Gratis</div>
         </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/juego8.jpg">
-            <div class="cal">
-                    <img src="~/images/calendar-icon.png">
-                    <h4>Sabado 06:30 p.m.</h4>
-                </div>
-                <h4>League of legend evento clash </h4>
-            <div class="cond">Gratis</div>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/juego7.jpg">
-            <div class="cal">
-                    <img src="~/images/calendar-icon.png">
-                    <h4>Sabado 06:30 p.m.</h4>
-                </div>
-                <h4>League of legend evento clash </h4>
-            <div class="cond">Gratis</div>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/juego6.jpg">
-            <div class="cal">
-                    <img src="~/images/calendar-icon.png">
-                    <h4>Sabado 06:30 p.m.</h4>
-                </div>
-                <h4>League of legend evento clash </h4>
-            <div class="cond">Gratis</div>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/juego5.jpg">
-            <div class="cal">
-                    <img src="~/images/calendar-icon.png">
-                    <h4>Sabado 06:30 p.m.</h4>
-                </div>
-                <h4>League of legend evento clash </h4>
-            <div class="cond">Gratis</div>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/juego4.jpg">
-            <div class="cal">
-                    <img src="~/images/calendar-icon.png">
-                    <h4>Sabado 06:30 p.m.</h4>
-                </div>
-                <h4>League of legend evento clash </h4>
-            <div class="cond">Gratis</div>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/juego3.jpg">
-           <div class="cal">
-                    <img src="~/images/calendar-icon.png">
-                    <h4>Sabado 06:30 p.m.</h4>
-                </div>
-                <h4>League of legend evento clash </h4>
-            <div class="cond">Gratis</div>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/juego2.jpg">
-            <div class="cal">
-                    <img src="~/images/calendar-icon.png">
-                    <h4>Sabado 06:30 p.m.</h4>
-                </div>
-                <h4>League of legend evento clash </h4>
-            <div class="cond">Gratis</div>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/juego1.jpg">
-            <div class="cal">
-                    <img src="~/images/calendar-icon.png">
-                    <h4>Sabado 06:30 p.m.</h4>
-                </div>
-                <h4>League of legend evento clash </h4>
-            <div class="cond">Gratis</div>
-        </article>
+        
     </div>
 </section>
+
+<div class="modal fade" id="miventana" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4>Información del evento</h4>
+                                </div>
+                                <div class="modal-body">
+                                       <p>Despues de un lanzamiento fallido del primer clash, ahora vuelve en versión beta
+                                           para todos los amantes de las E-sport esta sera la experiencia mas cercana que 
+                                           league of legend ofrece a todos sus jugadores. El evento se realizara el 27 al
+                                           28 de octubre a las 6.30 p.m.
+                                       </p>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+        <div class="modal fade" id="miventana1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4>Información del evento</h4>
+                                </div>
+                                <div class="modal-body">
+                                       <p>Feria cultural enfocado a los hobbies y el entretenimiento tales como; Princesas de Disney, 
+                                           Anime, Comics, Mangas, Videojuegos, Cine y doblaje; donde habrán Concursos, Conferencias, 
+                                           Fanclubs, tiendas especializadas en artículos de colección para todos los fanáticos, torneos,
+                                        Cosplays, invitados internacionales y nacionales, bandas invitadas, talleres y más. El evento se llevara acabo
+                                        el 23 y 24 de junio en el centro español del Perú.
+                                       </p>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+<div class="modal fade" id="miventana2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4>Información del evento</h4>
+                                </div>
+                                <div class="modal-body">
+                                       <p>Muchas veces enfrentamos situaciones complejas que demandan soluciones distintas y únicas. 
+                                           En estos contextos, es necesario resolver los problemas de una manera creativa, crítica y 
+                                           flexible. Disruptive Design es la herramienta ideal para estos casos pues brinda resultados
+                                            que responden a realidades de constantes cambios. Disruptive Design es una metodología que
+                                             tiene como foco el desarrollo de soluciones utilizando una combinación de creatividad, 
+                                             Systems Thinking y Design Thinking, así como, frameworks de sostenibilidad. Así, se 
+                                             exploran de una manera holística, soluciones que tengan un alto impacto. El evento se realizara
+                                             el 3 de noviembre en la Universidad de San Martin de Porres.
+                                       </p>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+<div class="modal fade" id="miventana3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4>Información del evento</h4>
+                                </div>
+                                <div class="modal-body">
+                                       <p>El International 2018 es el torneo final del Circuito Dota Pro y la octava edición anual de The International .
+                                            El torneo se llevará a cabo en suelo canadiense por primera vez, mientras se mueve al Rogers Arena en 
+                                            Vancouver, Canadá. [1] Por primera vez, se utilizó un sistema de puntos basado en Mayores y Menores 
+                                            patrocinados oficialmente para determinar las invitaciones a The International.El evento se realizará el 14 de junio.
+                                       </p>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+<div class="modal fade" id="miventana4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4>Información del evento</h4>
+                                </div>
+                                <div class="modal-body">
+                                       <p>Y es que, el evento Halloween Terror 2018 de Overwatch comenzará el próximo 9 de octubre y se
+                                            extenderá hasta el mismo día 31. Por tanto, nos esperan tres semanas de acción en las que tendremos que 
+                                            hacernos con las nuevas skins.
+                                       </p>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+<div class="modal fade" id="miventana5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4>Información del evento</h4>
+                                </div>
+                                <div class="modal-body">
+                                       <p>El 27 y 28 de octubre de 2018 vuelve en Alicante el evento Video Game Comic, donde se reúnen
+                                        diversas actividades sobre el mundo de los videojuegos, los cómics, el cine y las series.
+                                       </p>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
 <h3 class="titulo-container">Videos Destacados </h3>
         <div style="position:relative;height:0;padding-bottom:56.27%"><iframe src="https://www.youtube.com/embed/EoUTXX-n_sA?ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
         <br>
