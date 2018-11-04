@@ -5,22 +5,24 @@
 <h2>Por</h2>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">CREAR NUEVA PRUEBA</a>
 </p>
 <form asp-controller="Home" asp-action="Prueba_bd">
      <p>
-         Title: <input type="text" name="SearchString">
+         ID PRUBEA: <input type="text" name="SearchString">
          <input type="submit" value="Filter" />
      </p>
+    
  </form>
    
                 <table class="table">
                 <thead>
                     <tr>
                         <th>
-                     </th>
-                           @Html.DisplayNameFor(model => model.Nom_juego)
-                        <th></th>
+                            </th>
+                                @Html.DisplayNameFor(model => model.Nom_juego)
+                            <th>                            
+                        </th>
                     </tr>
                  </thead>
                 <tbody>

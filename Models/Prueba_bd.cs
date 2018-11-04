@@ -9,7 +9,8 @@ namespace SICORA.Models
         public string ID { get; set;}
         public string Nom_juego {get; set;}
         public string Desc_juego {get; set;}
-        public string trailer_juego {get; set;}
-        public string pre_juego {get;set;}
+        public string Trailer_juego {get; set;}
+        public string Imagen_juego {get; set;}
+        public string Pre_juego {get;set;}
     }
 }

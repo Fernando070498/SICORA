@@ -28,7 +28,7 @@ namespace SICORA
             services.AddMvc();
             services.AddDbContext<MvcContext>(options =>
                   //options.UseSqlite(@"Data Source=/app/MvcMovie.db")
-                  options.UseMySQL("server=localhost;database=base_Sicora;user=root;password=12345678;port=3306")
+                  options.UseMySQL("server=localhost;database=sicora_final;user=root;password=12345678;port=3306")
 
                   );            
         }
