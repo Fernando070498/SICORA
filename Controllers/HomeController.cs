@@ -32,7 +32,7 @@ namespace SICORA.Controllers
              
              return View(await home.ToListAsync());
 
-             return View(await _context.Prueba_bd.ToListAsync());
+            // return View(await _context.Prueba_bd.ToListAsync());
         }
 
         public IActionResult Login()
