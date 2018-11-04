@@ -1,0 +1,46 @@
+@model IEnumerable<SICORA.Models.Prueba_bd>
+@{
+    ViewData["Title"] = "CONEXION";
+}
+<h2>PorElla</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<form asp-controller="Home" asp-action="Prueba_bd">
+     <p>
+         Title: <input type="text" name="SearchString">
+         <input type="submit" value="Filter" />
+     </p>
+ </form>
+   
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                     </th>
+                           @Html.DisplayNameFor(model => model.Nom_juego)
+                        <th></th>
+                    </tr>
+                 </thead>
+                <tbody>
+                @foreach (var item in Model) {
+                     <tr>
+                        <td>
+                             @Html.DisplayFor(modelItem => item.Nom_juego)
+                        </td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                         </td>
+                    </tr>
+                }
+                </tbody>
+                </table>
+
+                
+               
+            </table>
+        </div>
+    </form>
+   
+</body>

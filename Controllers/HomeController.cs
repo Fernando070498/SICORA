@@ -21,24 +21,26 @@ namespace SICORA.Controllers
 
 
         // GET: PRUEBA
-        public async Task<IActionResult> Prueba_bd(string searchString)
+        public async Task<IActionResult> Prueba(string searchString)
         {
-              var prueba_bd = from m in _context.Prueba_bd select m;
+              var home = from m in _context.Prueba_bd select m;
 
              if (!String.IsNullOrEmpty(searchString))
              {
-                 prueba_bd = prueba_bd.Where(s => s.Nom_juego.Contains(searchString));
+                 home = home.Where(s => s.Nom_juego.Contains(searchString));
              }
              
-             return View(await prueba_bd.ToListAsync());
+             return View(await home.ToListAsync());
 
-            return View(await _context.Prueba_bd.ToListAsync());
+             return View(await _context.Prueba_bd.ToListAsync());
         }
 
         public IActionResult Login()
-        {
+        {           
+            
             return View();
         }
+        
         public IActionResult Principal()
         {
             return View();
@@ -48,9 +50,23 @@ namespace SICORA.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-        public IActionResult Prueba_bd()
+        public IActionResult Create()
         {
             return View();
+        }
+
+         [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("Nom_juego")] Prueba_bd prueba_bd)
+        {
+            
+            if (ModelState.IsValid)
+            {
+                _context.Add(prueba_bd);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Prueba));
+            }
+            return View(prueba_bd);
         }
         
     }

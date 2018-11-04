@@ -2,7 +2,7 @@ using System;
 
 namespace SICORA.Models
 {
-    public class Periferico
+    public class Juegos
     {
         public string ID { get; set;}
         public string Nom_juego {get; set;}
