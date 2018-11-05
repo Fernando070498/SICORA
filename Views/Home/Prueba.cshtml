@@ -23,6 +23,26 @@
                                 @Html.DisplayNameFor(model => model.Nom_juego)
                             <th>                            
                         </th>
+                        <th>
+                            </th>
+                                @Html.DisplayNameFor(model => model.Desc_juego)
+                            <th>                            
+                        </th>
+                        <th>
+                            </th>
+                                @Html.DisplayNameFor(model => model.Trailer_juego)
+                            <th>                            
+                        </th>
+                        <th>
+                            </th>
+                                @Html.DisplayNameFor(model => model.Imagen_juego)
+                            <th>                            
+                        </th>
+                        <th>
+                            </th>
+                                @Html.DisplayNameFor(model => model.Pre_juego)
+                            <th>                            
+                        </th>
                     </tr>
                  </thead>
                 <tbody>
@@ -30,6 +50,22 @@
                      <tr>
                         <td>
                              @Html.DisplayFor(modelItem => item.Nom_juego)
+                        </td>
+                        
+                         <td>
+                             @Html.DisplayFor(modelItem => item.Desc_juego)
+                        </td>
+                        
+                         <td>
+                             @Html.DisplayFor(modelItem => item.Trailer_juego)
+                        </td>
+                        
+                         <td>
+                             @Html.DisplayFor(modelItem => item.Imagen_juego)
+                        </td>
+                        
+                         <td>
+                             @Html.DisplayFor(modelItem => Pre_juego)
                         </td>
                         <td>
                             <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
