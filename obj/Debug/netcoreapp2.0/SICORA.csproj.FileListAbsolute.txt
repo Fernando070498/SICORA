@@ -129,3 +129,14 @@ C:\Users\Sebas\Desktop\Sicora\SICORA\obj\Debug\netcoreapp2.0\SICORA.AssemblyInfo
 C:\Users\Sebas\Desktop\Sicora\SICORA\obj\Debug\netcoreapp2.0\SICORA.AssemblyInfo.cs
 C:\Users\Sebas\Desktop\Sicora\SICORA\obj\Debug\netcoreapp2.0\SICORA.dll
 C:\Users\Sebas\Desktop\Sicora\SICORA\obj\Debug\netcoreapp2.0\SICORA.pdb
+C:\Users\HP-ENVY\Desktop\parte5\SICORA-1\bin\Debug\netcoreapp2.0\SICORA.deps.json
+C:\Users\HP-ENVY\Desktop\parte5\SICORA-1\bin\Debug\netcoreapp2.0\SICORA.runtimeconfig.json
+C:\Users\HP-ENVY\Desktop\parte5\SICORA-1\bin\Debug\netcoreapp2.0\SICORA.runtimeconfig.dev.json
+C:\Users\HP-ENVY\Desktop\parte5\SICORA-1\bin\Debug\netcoreapp2.0\SICORA.dll
+C:\Users\HP-ENVY\Desktop\parte5\SICORA-1\bin\Debug\netcoreapp2.0\SICORA.pdb
+C:\Users\HP-ENVY\Desktop\parte5\SICORA-1\obj\Debug\netcoreapp2.0\SICORA.csprojAssemblyReference.cache
+C:\Users\HP-ENVY\Desktop\parte5\SICORA-1\obj\Debug\netcoreapp2.0\SICORA.csproj.CoreCompileInputs.cache
+C:\Users\HP-ENVY\Desktop\parte5\SICORA-1\obj\Debug\netcoreapp2.0\SICORA.AssemblyInfoInputs.cache
+C:\Users\HP-ENVY\Desktop\parte5\SICORA-1\obj\Debug\netcoreapp2.0\SICORA.AssemblyInfo.cs
+C:\Users\HP-ENVY\Desktop\parte5\SICORA-1\obj\Debug\netcoreapp2.0\SICORA.dll
+C:\Users\HP-ENVY\Desktop\parte5\SICORA-1\obj\Debug\netcoreapp2.0\SICORA.pdb
