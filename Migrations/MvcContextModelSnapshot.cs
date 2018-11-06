@@ -25,6 +25,8 @@ namespace SICORA.Migrations
 
                     b.Property<string>("Desc_juego");
 
+                    b.Property<string>("Img_juego");
+
                     b.Property<string>("Nom_juego");
 
                     b.Property<string>("pre_juego");
@@ -43,6 +45,8 @@ namespace SICORA.Migrations
 
                     b.Property<string>("Desc_perifericos");
 
+                    b.Property<string>("Img_perifericos");
+
                     b.Property<string>("Nom_perifericos");
 
                     b.Property<string>("pre_perifericos");
@@ -58,6 +62,8 @@ namespace SICORA.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Desc_programa");
+
+                    b.Property<string>("Img_programa");
 
                     b.Property<string>("Nom_programa");
 

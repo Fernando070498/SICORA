@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace SICORA.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,6 +14,7 @@ namespace SICORA.Migrations
                 {
                     ID = table.Column<string>(nullable: false),
                     Desc_juego = table.Column<string>(nullable: true),
+                    Img_juego = table.Column<string>(nullable: true),
                     Nom_juego = table.Column<string>(nullable: true),
                     pre_juego = table.Column<string>(nullable: true),
                     trailer_juego = table.Column<string>(nullable: true)
@@ -29,6 +30,7 @@ namespace SICORA.Migrations
                 {
                     ID = table.Column<string>(nullable: false),
                     Desc_perifericos = table.Column<string>(nullable: true),
+                    Img_perifericos = table.Column<string>(nullable: true),
                     Nom_perifericos = table.Column<string>(nullable: true),
                     pre_perifericos = table.Column<string>(nullable: true)
                 },
@@ -43,6 +45,7 @@ namespace SICORA.Migrations
                 {
                     ID = table.Column<string>(nullable: false),
                     Desc_programa = table.Column<string>(nullable: true),
+                    Img_programa = table.Column<string>(nullable: true),
                     Nom_programa = table.Column<string>(nullable: true),
                     pre_programa = table.Column<string>(nullable: true)
                 },
