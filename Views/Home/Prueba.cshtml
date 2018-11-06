@@ -18,30 +18,20 @@
                 <table class="table">
                 <thead>
                     <tr>
-                        <th>
-                            </th>
-                                @Html.DisplayNameFor(model => model.Nom_juego)
-                            <th>                            
+                        <th>                           
+                                @Html.DisplayNameFor(model => model.Nom_juego)                            
                         </th>
-                        <th>
-                            </th>
-                                @Html.DisplayNameFor(model => model.Desc_juego)
-                            <th>                            
+                        <th>                        
+                                @Html.DisplayNameFor(model => model.Desc_juego)                                                       
                         </th>
-                        <th>
-                            </th>
-                                @Html.DisplayNameFor(model => model.Trailer_juego)
-                            <th>                            
+                        <th>                           
+                                @Html.DisplayNameFor(model => model.Trailer_juego)                                                        
                         </th>
-                        <th>
-                            </th>
-                                @Html.DisplayNameFor(model => model.Imagen_juego)
-                            <th>                            
+                        <th>                           
+                                @Html.DisplayNameFor(model => model.Imagen_juego)                                                      
                         </th>
-                        <th>
-                            </th>
-                                @Html.DisplayNameFor(model => model.Pre_juego)
-                            <th>                            
+                        <th>                          
+                                @Html.DisplayNameFor(model => model.Pre_juego)                                                        
                         </th>
                     </tr>
                  </thead>
@@ -65,7 +55,7 @@
                         </td>
                         
                          <td>
-                             @Html.DisplayFor(modelItem => Pre_juego)
+                             @Html.DisplayFor(modelItem => item.Pre_juego)
                         </td>
                         <td>
                             <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
