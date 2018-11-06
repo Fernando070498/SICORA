@@ -57,7 +57,7 @@ namespace SICORA.Controllers
 
          [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Nom_juego")] Prueba_bd prueba_bd)
+        public async Task<IActionResult> Create([Bind("Nom_juego, Desc_juego, Trailer_juego, Imagen_juego, Pre_juego")] Prueba_bd prueba_bd)
         {
             
             if (ModelState.IsValid)
