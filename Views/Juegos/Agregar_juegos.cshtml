@@ -1,3 +1,5 @@
+@model SICORA.Models.Juegos
+
 <style>
       *{
             margin: 0px;
@@ -29,7 +31,7 @@
               margin-bottom: 20px;
       }
 
-      input, textarea{
+      button,input, textarea{
               width: 100%;
               margin-bottom: 20px;
               padding: 7px;
@@ -65,40 +67,17 @@
 </style>
 
 <body>
-        <form action="">
+        <form asp-action="Agregar_juegos">
                 <h2>REGISTRAR NUEVO JUEGO</h2>
-                <input type="text" name="ID" placeholder="ID del juego">
-                <input type="text" name="Nombre" placeholder="Nombre">
-                <input type="url" name="Link" placeholder="Url del trailer">
-                <input type="url" name="Img" placeholder="Url de la imagen">
-                <input type="text" name="Precio" placeholder="Precio">
-                <textarea name="Descripción" placeholder="Descripción"></textarea>
-                <input type="button" data-toggle="modal" data-target="#miventana" value="Registrar" id="boton">
+                
+                <input asp-for="Nom_juego" type="text" name="Nombre" placeholder="Nombre">
+                <input asp-for="trailer_juego" type="url" name="Link" placeholder="Url del trailer">
+                <input asp-for="Img_juego" type="url" name="Img" placeholder="Url de la imagen">
+                <input asp-for="pre_juego" type="text" name="Precio" placeholder="Precio">
+                <textarea  asp-for="Desc_juego" name="Descripción" placeholder="Descripción"></textarea>
+                <button value="Registrar" id="boton">Registrar</button>
         </form>
-
-        <div class="modal fade" id="miventana" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                        <div class="modal-content">
-                                <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4>Lista de juegos</h4>
-                                </div>
-                                <div class="modal-body">
-                                        <tr>
-                                                <td>ID</td>
-                                                <td>Nombre</td>
-                                                <td>Link</td>
-                                                <td>Imagen</td>
-                                                <td>Precio</td>
-                                                <td>Descripción</td>
-                                        </tr>
-                                </div>
-                                <div class="modal-footer">
-                                        <button type="button" class="guardar" data-dismiss="modal">Guardar</button>
-                                </div>
-
-                        </div>
-
-                </div>
-        </div>
 </body>
+ @section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

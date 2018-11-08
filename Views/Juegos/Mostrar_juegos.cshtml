@@ -1,3 +1,5 @@
+@model IEnumerable<SICORA.Models.Juegos>
+
 @{
     ViewData["Title"] = "JUEGOS";
 }
@@ -282,148 +284,19 @@ footer .column1, .column2, .column3 {
     <h3 class="titulo-container">TODOS LOS JUEGOS </h3>
     <div class="contenedor">
         <article>
+            @foreach (var j in Model) {
             <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
+                <div class="info-img">            
+                <p class="info-1"> @Html.DisplayFor(modelItem => j.Desc_juego) 
+                </p> <hr>
+                <a href="@Html.DisplayFor(modelItem => j.trailer_juego)" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
+                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('@Html.DisplayFor(modelItem => j.pre_juego)')">Comprar</a>
                 </div>
                 </div>
-                <img src="~/images/overwatch1.jpg">
-            <h4>Overwatch</h4>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Es un videojuego de acción multijugador donde el 
-                    objetivo primario será sobrevivir y matar a nuestros competidores. </p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-            <img src="~/images/pubg1.jpg">
-            <h4>Playerunknown's Battlegrounds</h4>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Encontraremos a un experimentado Peter Parker, más capacitado en su 
-            lucha contra el crimen organizado de la ciudad de Nueva York. </p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-            <img src="~/images/spiderman1.jpg">
-            <h4>Spiderman</h4>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/Persona5.jpg">
-            <h4>Persona 5</h4>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/juego8.jpg">
-            <h4>battlefield</h4>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/juego7.jpg">
-            <h4>God Of War</h4>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/juego6.jpg">
-            <h4>Monster Hunter</h4>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/juego5.jpg">
-            <h4>Fifa 19</h4>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/juego4.jpg">
-            <h4>Geometry Dash</h4>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/juego3.jpg">
-            <h4>Red Dead</h4>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/juego2.jpg">
-            <h4>GTA V</h4>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Elije tu héroe e ingresa a los 
-                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
-                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/juego1.jpg">
-            <h4>wow</h4>
+                <img src="@Html.DisplayFor(modelItem => j.Img_juego)">
+            <h4>@Html.DisplayFor(modelItem => j.Nom_juego)
+            </h4>
+            }
         </article>
     </div>
 </section>
