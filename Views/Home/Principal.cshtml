@@ -7,6 +7,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
     </head>
     <style>
@@ -152,13 +153,40 @@ footer{
 footer .column1, .column2, .column3 {
     margin: 65px;
 }
+.wrap{
+    width: 800px;
+    max-width:90%;
+    margin:30px auto;
+}
+ul.tabs{
+    width:100%;
+    list-style: none;
+    display:flex;
+    background:black;
+}
+
+ul.tabs li{
+    width:18%;
+}
+
+ul.tabs li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px ;
+    display: block;
+}
+ul.tabs li a{
+    margin-left: 8px;
+}
+.active{
+    background: red;
+}
 
     </style> 
 <<BODY onLoad="alert('Bienvenido a mi Página Web. Disfruta el contenido');" onUnLoad="confirm('Gracias por tu visita, espero que no sea la última');">
 >
-
-		
-		<div class="col-md-12">
+<div class="col-md-12">
             
 			<div id="carousel-1" class="carousel slide" data-ride="carousel" data-interval="5000">
 				
@@ -207,8 +235,7 @@ footer .column1, .column2, .column3 {
 			</div>
 		</div>
 	</div>
-    
-
+		
 <section id="blog">
     
     <div class="contenedor">
@@ -230,6 +257,31 @@ footer .column1, .column2, .column3 {
         </article>
     </div>
 </section>
+
+
+    <div class="wrap">
+        <ul class="tabs">
+                <li><a href="#tab1"><span class="tab-text">tfue</span></a></li>
+                <li><a href="#tab2"><span class="tab-text">faker</span></a></li>
+                <li><a href="#tab3"><span class="tab-text">shroud</span></a></li>
+                <li><a href="#tab4"><span class="tab-text">chuty</span></a></li> 
+        </ul>
+        <div class="secciones">
+            <article id="tab1">
+                <p>asdadasdsaddasdasd</p>
+            </article>
+            <article id="tab2">
+                <p>asdadasdsasdfsf</p>
+            </article>
+            <article id="tab3">
+                <p>asdadasdsasdfsfdd</p>
+            </article>
+            <article id="tab4">
+                <p>asdadasdssdfsdfsdfsdasd</p>
+            </article>
+        </div>
+    </div>
+
 
 <section id="info">
       <h3>Profesionales que compran en nuestra tienda</h3>
