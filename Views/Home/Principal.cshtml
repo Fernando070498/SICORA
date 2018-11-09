@@ -6,9 +6,10 @@
 	<title>Document</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
-    </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="~/js/main.js"></script>
+</head>
     <style>
         *{
             margin: 0px;
@@ -18,6 +19,7 @@
         }
       body{
           background-color:rgb(41, 43, 43);
+          margin: 0;
       }
       .item {
       display: block;
@@ -152,63 +154,80 @@ footer{
 footer .column1, .column2, .column3 {
     margin: 65px;
 }
+.wrap{
+    width: 800px;
+    max-width:90%;
+    margin:30px auto;
+}
+ul.tabs{
+    width:100%;
+    list-style: none;
+    display:flex;
+    background:black;
+}
+
+ul.tabs li{
+    width:18%;
+}
+
+ul.tabs li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px ;
+    display: block;
+}
+ul.tabs li a{
+    margin-left: 8px;
+}
+.act{
+    background: red;
+}
+.secciones{
+    width: 100%;
+    background: white;
+}
+.secciones article{
+    padding: 30px;
+}
+
+.secciones article p{
+    text-align: justify;
+}
+.vid{
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -1;
+}
+.text-vid {
+    width: 100%;
+}
+.text1{
+    font-family: cursive;
+    position: absolute;
+    padding: 25px;
+    margin-top: 15%;
+    margin-left: 32%;
+    margin-bottom: 15%;
+    margin-right: 32%;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+}
 
     </style> 
 <BODY onLoad="alert('Bienvenido a mi Página Web. Disfruta el contenido');" onUnLoad="confirm('Gracias por tu visita, espero que no sea la última');">
+<<<<<<< HEAD
 
+=======
+>>>>>>> d80fb8ffb81892d69b2e59ffd49b0c3573556aa8
 
-		
-		<div class="col-md-12">
-            
-			<div id="carousel-1" class="carousel slide" data-ride="carousel" data-interval="5000">
-				
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-1" data-slide-to="0" class="active" ></li>
-					<li data-target="#carousel-1" data-slide-to="1"	></li>
-					<li data-target="#carousel-1" data-slide-to="2"	></li>
-				</ol>
-				
-				
-				<div class="carousel-inner" role="listbox">
-					
-					<div class="item active">
-						<img class="d-block w-100" src="~/images/razer.jpg" alt="" class="img-responsive">
-						<div class="carousel-caption">
-							<h3>Mejores Perifericos</h3>
-                    </a>
-							
-						</div>
-					</div>
-					
-					<div class="item ">
-						<img src="~/images/fifa19.jpg" class="d-block w-100" class="img-responsive" alt="">
-						<div class="carousel-caption ">
-							<h3>Juegos y más</h3>
-							
-						</div>
-					</div>
-					
-					<div class="item">
-						<img src="~/images/chicagamer.jpg" class="d-block w-100" alt="" class="img-responsive">
-						<div class="carousel-caption ">
-			   				<h3>Mayor Experiencia Gaming</h3>
-						</div>
-					</div>
-				</div>
-				
-				<a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Anterior</span>
-				</a>
-				<a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Siguiente</span>
-				</a>
-			</div>
-		</div>
-	</div>
+<main class="text-vid">
+    <h1 class="text1">SICORA</h1>
+    <video class="vid" src="~/video/Fortnitetrailer.mp4" autoplay loop muted></video>
     
-
+</main>	
+		
 <section id="blog">
     
     <div class="contenedor">
@@ -230,6 +249,55 @@ footer .column1, .column2, .column3 {
         </article>
     </div>
 </section>
+
+
+    <div class="wrap">
+        <ul class="tabs">
+                <li><a href="#tab1"><span class="tab-text">tfue</span></a></li>
+                <li><a href="#tab2"><span class="tab-text">faker</span></a></li>
+                <li><a href="#tab3"><span class="tab-text">shroud</span></a></li>
+                <li><a href="#tab4"><span class="tab-text">chuty</span></a></li> 
+        </ul>
+        <div class="secciones">
+            <article id="tab1">
+                <h2 style="color:red;font-family:cursive;">Informacion Personal</h2>
+                <p style="font-family:cursive;">Nombre: Turner Tenney</p>
+                <p style="font-family:cursive;">País de nacimiento: Estados Unidos Estados Unidos</p>
+                <p style="font-family:cursive;">Residencia: Norteamérica</p>
+                <h2 style="color:red;font-family:cursive;">Información profesional</h2>
+                <p style="font-family:cursive;">Equipo: FaZe Clan</p>
+                <p style="font-family:cursive;">Papel: Jugador Profesional</p>
+            </article>
+            <article id="tab2">
+                <h2 style="color:red;font-family:cursive;">Informacion Personal</h2>
+                <p style="font-family:cursive;">Nombre en coreano: Lee, Hyuk</p>
+                <p style="font-family:cursive;">País de nacimiento: Gangseo-gu, Seúl, Corea del Sur</p>
+                <p style="font-family:cursive;">Nacionalidad: Surcoreana </p>
+                <h2 style="color:red;font-family:cursive;">Información profesional</h2>
+                <p style="font-family:cursive;">Equipo: SK Telecom T1</p>
+                <p style="font-family:cursive;">Papel: Jugador Profesional</p>
+            </article>
+            <article id="tab3">
+                <h2 style="color:red;font-family:cursive;">Informacion Personal</h2>
+                <p style="font-family:cursive;">Nombre: Michael Grzesiek</p>
+                <p style="font-family:cursive;">País de nacimiento: Estados Unidos Estados Unidos</p>
+                <p style="font-family:cursive;">Nacionalidad: estadounidense</p>
+                <h2 style="color:red;font-family:cursive;">Información profesional</h2>
+                <p style="font-family:cursive;">Equipo: Cloud9</p>
+                <p style="font-family:cursive;">Papel: Jugador Profesional</p>
+            </article>
+            <article id="tab4">
+                <h2 style="color:red;font-family:cursive;">Informacion Personal</h2>
+                <p style="font-family:cursive;">Nombre: chuty</p>
+                <p style="font-family:cursive;">País de nacimiento: Estados Unidos Estados Unidos</p>
+                <p style="font-family:cursive;">Nacionalidad: estadounidense</p>
+                <h2 style="color:red;font-family:cursive;">Información profesional</h2>
+                <p style="font-family:cursive;">Equipo: Cloud9</p>
+                <p style="font-family:cursive;">Papel: Jugador Profesional</p>
+            </article>
+        </div>
+    </div>
+
 
 <section id="info">
       <h3>Profesionales que compran en nuestra tienda</h3>
