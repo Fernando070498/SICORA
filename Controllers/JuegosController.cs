@@ -18,10 +18,19 @@ namespace SICORA.Controllers
         {
             _context = context;
         }
-        public IActionResult Mostrar_juegos()
+        public async Task<IActionResult> Mostrar_juegos(string searchString)
         {
-            return View();
-        } 
+              var juego = from m in _context.Juegos select m;
+
+             if (!String.IsNullOrEmpty(searchString))
+             {
+                 juego = juego.Where(s => s.Nom_juego.Contains(searchString));
+             }
+             
+             return View(await juego.ToListAsync());
+
+            // return View(await _context.Prueba_bd.ToListAsync());
+        }
         public IActionResult Agregar_juegos()
         {
             return View();
@@ -29,7 +38,7 @@ namespace SICORA.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Agregar_juegos([Bind("Nom_juego, Desc_juego, trailer_juego, Img_juego, Pre_juego")] Juegos juegos)
+        public async Task<IActionResult> Agregar_juegos([Bind("Nom_juego, Desc_juego, trailer_juego, Img_juego, pre_juego")] Juegos juegos)
         {
             
             if (ModelState.IsValid)
