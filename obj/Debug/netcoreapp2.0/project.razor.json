@@ -1,14 +1,6 @@
 {
-  "ProjectFilePath": "c:\\Users\\HP-ENVY\\Desktop\\parte11\\SICORA\\SICORA.csproj",
+  "ProjectFilePath": "c:\\Users\\Jose Flores Montes\\Desktop\\sicorav8\\SICORA\\SICORA.csproj",
   "TargetFramework": "netcoreapp2.0",
   "TagHelpers": [],
-  "Configuration": {
-    "ConfigurationName": "MVC-2.0",
-    "LanguageVersion": "2.0",
-    "Extensions": [
-      {
-        "ExtensionName": "MVC-2.0"
-      }
-    ]
-  }
+  "Configuration": null
 }
