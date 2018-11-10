@@ -1,3 +1,4 @@
+@model IEnumerable<SICORA.Models.Programas>
 @{
     ViewData["Title"] = "PROGRAMAS DESCARGABLES";
 }
@@ -225,112 +226,25 @@ footer .column1, .column2, .column3 {
     </style> 
 <body>
 
-
+<h3 class="titulo-container">TODOS LOS PROGRAMAS </h3>
+ @foreach (var pr in Model) {
 <section id="blog">
-    <h3 class="titulo-container">TODOS LOS PROGRAMAS </h3>
+    
     <div class="contenedor">
         <article>
             <div class="img1">
                 <div class="info-img">
-                <p class="info-1">AutoCAD software de diseño asistido por computadora utilizado para dibujo 2D y modelado 3D. <br><br><br><br><br></p><hr>
+                <p class="info-1">@Html.DisplayFor(modelItem => pr.Desc_programa)</p><hr>
                 
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
+                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('@Html.DisplayFor(modelItem => pr.pre_programa)')">Comprar</a>
                 </div>
                 </div>
-                <img src="~/images/autocad.jpg">
-            <h4>Autocad 2015</h4>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">AVG AntiVirus, AVG (AntiVirus Guard) es un software antivirus desarrollado por la empresa checa, AVG Technologies, disponible para sistemas operativos Windows, Linux, Android, iOS y Windows Phone, entre otros. </p><hr>
-                
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-            <img src="~/images/avg.jpg">
-            <h4>AVG Antivirus</h4>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">ESET NOD32 es un programa antivirus desarrollado por la empresa ESET <br><br><br><br><br></p><hr>
-                
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-            <img src="~/images/nod32.jpg">
-            <h4>Nod32 Antivirus</h4>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Windows 10 es el vigente sistema operativo desarrollado por Microsoft como parte de la familia de sistemas operativos Windows NT<br><br><br><br></p><hr>
-                
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/win10pro.jpg">
-            <h4>Windows 10 Pro</h4>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Adobe Photoshop es un editor de gráficos rasterizados desarrollado por Adobe Systems Incorporated.<br><br><br><br><br></p><hr>
-                
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/photoshop.jpg">
-            <h4>Photoshop CC 2017</h4>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Adobe Premiere Pro es un software de edición de vídeo desarrollado por Adobe y publicado como parte de Adobe Creative Cloud.<br><br><br><br></p><hr>
-                
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/adpremiere.jpg">
-            <h4>Adobe Premierer Pro CC 2017</h4>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Vegas Pro, conocido antiguamente como Sony Vegas, es un Sistema de edición no lineal diseñado para PC.<br><br><br><br><br></p><hr>
-                
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/vegas.jpg">
-            <h4>Sony Vegas Pro</h4>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">Autodesk 3ds Max (anteriormente 3D Studio Max) es un programa de creación de gráficos y animación 3D desarrollado por Autodesk<br><br><br><br></p><hr>
-                
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/3d.jpg">
-            <h4>Autodesk 3ds Max 2010</h4>
-        </article>
-        <article>
-            <div class="img1">
-                <div class="info-img">
-                <p class="info-1">McAfee VirusScan es un software antivirus, creado y mantenido por la empresa Intel Security.<br><br><br><br><br></p><hr>
-                
-                <a href="" class="button2" role="button" aria-pressed="true" onclick="javascript:alert('Agregado Al Carrito')">Comprar</a>
-                </div>
-                </div>
-                <img src="~/images/mc.png">
-            <h4>McAfee antivirus</h4>
-        </article>
-        
+                <img src="@Html.DisplayFor(modelItem => pr.Img_programa)">
+            <h4>@Html.DisplayFor(modelItem => pr.Nom_programa)
+            </h4>
+        </article>      
     </div>
-</section>
+</section> }
 <footer>
         <div class="container-body">
             <div class="column1">

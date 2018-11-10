@@ -4,19 +4,49 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using SICORA.Models;
 
 namespace SICORA.Controllers
 {
     public class ProgramasController : Controller
     {   
-        public IActionResult Mostrar_Programas()
+        private readonly MvcContext _context;
+
+        public ProgramasController(MvcContext context)
         {
-            return View();
-        } 
+            _context = context;
+        }
+       public async Task<IActionResult> Mostrar_Programas(string searchString)
+        {
+              var programa = from m in _context.Programas select m;
+
+             if (!String.IsNullOrEmpty(searchString))
+             {
+                 programa = programa.Where(s => s.Nom_programa.Contains(searchString));
+             }
+             
+             return View(await programa.ToListAsync());
+
+            // return View(await _context.Prueba_bd.ToListAsync());
+        }
         public IActionResult Agregar_Programas()
         {
             return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Agregar_Programas([Bind("Nom_programa, Desc_programa, Img_programa, pre_programa")] Programas programas)
+        {
+            
+            if (ModelState.IsValid)
+            {
+                _context.Add(programas);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Mostrar_Programas));
+            }
+            return View(programas);
         }
 
     }

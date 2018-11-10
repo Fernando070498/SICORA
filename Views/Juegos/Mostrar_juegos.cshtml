@@ -280,12 +280,14 @@ footer .column1, .column2, .column3 {
 				</a>
 			</div>
 		</div>
-	</div>   
+	</div> 
+    <h3 class="titulo-container">TODOS LOS JUEGOS </h3>  
+     @foreach (var j in Model) {
 <section id="blog">
-    <h3 class="titulo-container">TODOS LOS JUEGOS </h3>
+    
+    
     <div class="contenedor">
         <article>
-            @foreach (var j in Model) {
             <div class="img1">
                 <div class="info-img">            
                 <p class="info-1"> @Html.DisplayFor(modelItem => j.Desc_juego) 
@@ -297,10 +299,10 @@ footer .column1, .column2, .column3 {
                 <img src="@Html.DisplayFor(modelItem => j.Img_juego)">
             <h4>@Html.DisplayFor(modelItem => j.Nom_juego)
             </h4>
-            }
         </article>
     </div>
-</section>
+    
+</section>}
 
 
 <footer>

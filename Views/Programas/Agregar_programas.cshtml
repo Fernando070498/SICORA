@@ -1,3 +1,4 @@
+@model SICORA.Models.Programas
 <style>
       *{
             margin: 0px;
@@ -65,38 +66,24 @@
 </style>
 
 <body>
-        <form action="">
-                <h2>REGISTRAR NUEVO PROGRAMA</h2>
-                <input type="text" name="ID" placeholder="ID del programa">
-                <input type="text" name="Nombre" placeholder="Nombre">
-                <input type="url" name="Img" placeholder="Url de la imagen">
-                <input type="text" name="Precio" placeholder="Precio">
-                <textarea name="Descripción" placeholder="Descripción"></textarea>
-                <input type="button" data-toggle="modal" data-target="#miventana" value="Registrar" id="boton">
-        </form>
-
-        <div class="modal fade" id="miventana" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                        <div class="modal-content">
-                                <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4>Lista de Programas/h4>
-                                </div>
-                                <div class="modal-body">
-                                        <tr>
-                                                <td>ID</td>
-                                                <td>Nombre</td>
-                                                <td>Imagen</td>
-                                                <td>Precio</td>
-                                                <td>Descripción</td>
-                                        </tr>
-                                </div>
-                                <div class="modal-footer">
-                                        <button type="button" class="guardar" data-dismiss="modal">Guardar</button>
-                                </div>
-
-                        </div>
-
+        <form asp-action="Agregar_programas">
+                <h2>REGISTRAR PROGRAMA</h2>
+                
+                <div class="form-group">
+                <input asp-for="Nom_programa"  placeholder="Nombre"  required>               
                 </div>
-        </div>
+                <div class="form-group">
+                <input asp-for="Img_programa" placeholder="Imagen" required >
+                </div>
+                <div class="form-group">
+                <input asp-for="pre_programa" placeholder="Precio" required>
+                </div>
+                <div class="form-group">
+                <textarea  asp-for="Desc_programa"placeholder="Descripcion" required></textarea>
+                </div>
+                <div class="form-group">
+                <input type="submit" value="Registrar" id="boton">
+                </div>
+        </form>
+        
 </body>
