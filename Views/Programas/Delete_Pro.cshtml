@@ -1,0 +1,45 @@
+@model SICORA.Models.Programas
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Quieres eliminar esta seccion?</h3>
+<div>
+    <h4>Juegos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom_programa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nom_programa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Desc_programa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Desc_programa)
+        </dd>        
+        <dt>
+            @Html.DisplayNameFor(model => model.Img_programa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Img_programa)
+        </dd>
+         <dt>
+            @Html.DisplayNameFor(model => model.pre_programa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.pre_programa)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete_Pro">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Mostrar_programas" class="btn btn-default">Back to List</a>
+    </form>
+</div>

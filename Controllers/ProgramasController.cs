@@ -48,6 +48,39 @@ namespace SICORA.Controllers
             }
             return View(programas);
         }
+         public async Task<IActionResult> Delete_Pro(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var programas = await _context.Programas
+                .SingleOrDefaultAsync(m => m.ID == id);
+            if (programas == null)
+            {
+                return NotFound();
+            }
+
+            return View(programas);
+        }
+
+        // POST: Movies/Delete/5
+        [HttpPost, ActionName("Delete_Pro")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var programas = await _context.Programas.SingleOrDefaultAsync(m => m.ID == id);
+            _context.Programas.Remove(programas);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Mostrar_Programas));
+        }
+
+        private bool MovieExists(int id)
+        {
+            return _context.Programas.Any(e => e.ID == id);
+        }
+
 
     }
 }
