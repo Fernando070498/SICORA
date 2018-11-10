@@ -20,6 +20,7 @@
       body{
           background-color:rgb(41, 43, 43);
           margin: 0;
+          width:100%;
       }
       .item {
       display: block;
@@ -43,7 +44,7 @@ figure{
     flex-wrap: wrap;
 }
 #blog article {
-    margin: 18px;
+    margin: 20px;
     background-color: #111;
 }
 #blog img{
@@ -66,6 +67,7 @@ figure{
     margin: 40px;
 }
 .info-pro img{
+    margin-right: 25px;
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -155,9 +157,8 @@ footer .column1, .column2, .column3 {
     margin: 65px;
 }
 .wrap{
-    width: 800px;
-    max-width:90%;
-    margin:30px auto;
+    width: 100%;
+    max-width:100%;
 }
 ul.tabs{
     width:100%;
@@ -167,21 +168,38 @@ ul.tabs{
 }
 
 ul.tabs li{
-    width:18%;
+    width:30%;
 }
 
 ul.tabs li a{
     color: white;
     text-decoration: none;
+    text-align: center;
     font-size: 16px;
     padding: 20px ;
     display: block;
+    width: 100%;
 }
-ul.tabs li a{
-    margin-left: 8px;
+.tab-text{
+    font-size: 25px;
+    font-family: cursive;
 }
+.secciones h2{
+    font-family: cursive;
+    background:black;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+.secciones p{
+    
+    color: white;
+    padding: 20px;
+    background: rgb(41, 43, 43);
+}
+
 .act{
-    background: red;
+    background:red;
 }
 .secciones{
     width: 100%;
@@ -212,15 +230,12 @@ ul.tabs li a{
     margin-bottom: 15%;
     margin-right: 32%;
     color: white;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 12px 12px 12px 12px;
 }
 
     </style> 
-<BODY onLoad="alert('Bienvenido a mi Página Web. Disfruta el contenido');" onUnLoad="confirm('Gracias por tu visita, espero que no sea la última');">
-<<<<<<< HEAD
-
-=======
->>>>>>> d80fb8ffb81892d69b2e59ffd49b0c3573556aa8
+<BODY>
 
 <main class="text-vid">
     <h1 class="text1">SICORA</h1>
@@ -253,73 +268,49 @@ ul.tabs li a{
 
     <div class="wrap">
         <ul class="tabs">
-                <li><a href="#tab1"><span class="tab-text">tfue</span></a></li>
-                <li><a href="#tab2"><span class="tab-text">faker</span></a></li>
-                <li><a href="#tab3"><span class="tab-text">shroud</span></a></li>
-                <li><a href="#tab4"><span class="tab-text">chuty</span></a></li> 
+                <li><a href="#tab1"><span class="info-pro"><img src="~/images/tfue.jpg"></span><span class="tab-text">Tfue</span></a></li>
+                <li><a href="#tab2"><span class="info-pro"><img src="~/images/faker.jpg"></span><span class="tab-text">Faker</span></a></li>
+                <li><a href="#tab3"><span class="info-pro"><img src="~/images/shroud.jpeg"></span><span class="tab-text">Shroud</span></a></li>
+                <li><a href="#tab4"><span class="info-pro"><img src="~/images/chuty.jpg"></span><span class="tab-text">Chuty</span></a></li> 
         </ul>
         <div class="secciones">
             <article id="tab1">
-                <h2 style="color:red;font-family:cursive;">Informacion Personal</h2>
-                <p style="font-family:cursive;">Nombre: Turner Tenney</p>
-                <p style="font-family:cursive;">País de nacimiento: Estados Unidos Estados Unidos</p>
-                <p style="font-family:cursive;">Residencia: Norteamérica</p>
-                <h2 style="color:red;font-family:cursive;">Información profesional</h2>
-                <p style="font-family:cursive;">Equipo: FaZe Clan</p>
-                <p style="font-family:cursive;">Papel: Jugador Profesional</p>
+                <h2>Información Personal</h2>
+                <p>Nombre: Turner Tenney<br><br>
+                País de nacimiento: Estados Unidos Estados Unidos</p>
+                <h2>Información Profesional</h2>
+                <p>Equipo: FaZe Clan<br><br>
+                Papel: Jugador Profesional</p>
             </article>
             <article id="tab2">
-                <h2 style="color:red;font-family:cursive;">Informacion Personal</h2>
-                <p style="font-family:cursive;">Nombre en coreano: Lee, Hyuk</p>
-                <p style="font-family:cursive;">País de nacimiento: Gangseo-gu, Seúl, Corea del Sur</p>
-                <p style="font-family:cursive;">Nacionalidad: Surcoreana </p>
-                <h2 style="color:red;font-family:cursive;">Información profesional</h2>
-                <p style="font-family:cursive;">Equipo: SK Telecom T1</p>
-                <p style="font-family:cursive;">Papel: Jugador Profesional</p>
+                <h2>Información Personal</h2>
+                <p>Nombre en coreano: Lee, Hyuk<br><br>
+                País de nacimiento: Gangseo-gu, Seúl, Corea del Sur</p>
+                <h2>Información Profesional</h2>
+                <p>Equipo: SK Telecom T1<br><br>
+                Papel: Jugador Profesional</p>
             </article>
             <article id="tab3">
-                <h2 style="color:red;font-family:cursive;">Informacion Personal</h2>
-                <p style="font-family:cursive;">Nombre: Michael Grzesiek</p>
-                <p style="font-family:cursive;">País de nacimiento: Estados Unidos Estados Unidos</p>
-                <p style="font-family:cursive;">Nacionalidad: estadounidense</p>
-                <h2 style="color:red;font-family:cursive;">Información profesional</h2>
-                <p style="font-family:cursive;">Equipo: Cloud9</p>
-                <p style="font-family:cursive;">Papel: Jugador Profesional</p>
+                <h2>Información Personal</h2>
+                <p>Nombre: Michael Grzesiek<br><br>
+                País de nacimiento: Estados Unidos Estados Unidos</p>
+                <h2>Información Profesional</h2>
+                <p>Equipo: Cloud9<br><br>
+                Papel: Jugador Profesional</p>
             </article>
             <article id="tab4">
-                <h2 style="color:red;font-family:cursive;">Informacion Personal</h2>
-                <p style="font-family:cursive;">Nombre: chuty</p>
-                <p style="font-family:cursive;">País de nacimiento: Estados Unidos Estados Unidos</p>
-                <p style="font-family:cursive;">Nacionalidad: estadounidense</p>
-                <h2 style="color:red;font-family:cursive;">Información profesional</h2>
-                <p style="font-family:cursive;">Equipo: Cloud9</p>
-                <p style="font-family:cursive;">Papel: Jugador Profesional</p>
+                <h2>Información Personal</h2>
+                <p>Nombre: chuty<br><br>
+                País de nacimiento: Estados Unidos Estados Unidos</p>
+                <h2>Información Profesional</h2>
+                <p>Equipo: Cloud9<br><br>
+                Papel: Jugador Profesional</p>
             </article>
         </div>
     </div>
 
 
-<section id="info">
-      <h3>Profesionales que compran en nuestra tienda</h3>
-      <div class="contenedor">
-          <div class="info-pro">
-              <img src="~/images/tfue.jpg">
-              <h4>Tfue</h4>
-          </div>
-          <div class="info-pro">
-              <img src="~/images/faker.jpg">
-              <h4>Faker</h4>
-          </div>
-          <div class="info-pro">
-              <img src="~/images/shroud.jpeg">
-              <h4>Shroud</h4>
-          </div>
-          <div class="info-pro">
-              <img src="~/images/chuty.jpg">
-              <h4>Chuty</h4>
-          </div>
-      </div>
-</section>
+
     <footer>
         <div class="container-body">
             <div class="column1">
