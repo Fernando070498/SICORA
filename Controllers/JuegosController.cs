@@ -49,6 +49,38 @@ namespace SICORA.Controllers
             }
             return View(juegos);
         }
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var juegos = await _context.Juegos
+                .SingleOrDefaultAsync(m => m.ID == id);
+            if (juegos == null)
+            {
+                return NotFound();
+            }
+
+            return View(juegos);
+        }
+
+        // POST: Movies/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var juegos = await _context.Juegos.SingleOrDefaultAsync(m => m.ID == id);
+            _context.Juegos.Remove(juegos);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Mostrar_juegos));
+        }
+
+        private bool MovieExists(int id)
+        {
+            return _context.Juegos.Any(e => e.ID == id);
+        }
 
     }
 }

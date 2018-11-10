@@ -1,0 +1,51 @@
+@model SICORA.Models.Juegos
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Quieres eliminar esta seccion?</h3>
+<div>
+    <h4>Juegos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom_juego)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nom_juego)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Desc_juego)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Desc_juego)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.trailer_juego)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.trailer_juego)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Img_juego)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Img_juego)
+        </dd>
+         <dt>
+            @Html.DisplayNameFor(model => model.pre_juego)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.pre_juego)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Mostrar_juegos" class="btn btn-default">Back to List</a>
+    </form>
+</div>

@@ -48,7 +48,39 @@ namespace SICORA.Controllers
             }
             return View(perifericos);
         }
-        
+
+        public async Task<IActionResult> Delete_Per(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var perifericos = await _context.Perifericos
+                .SingleOrDefaultAsync(m => m.ID == id);
+            if (perifericos == null)
+            {
+                return NotFound();
+            }
+
+            return View(perifericos);
+        }
+
+        // POST: Movies/Delete/5
+        [HttpPost, ActionName("Delete_Per")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var perifericos = await _context.Perifericos.SingleOrDefaultAsync(m => m.ID == id);
+            _context.Perifericos.Remove(perifericos);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Mostrar_Perifericos));
+        }
+
+        private bool MovieExists(int id)
+        {
+            return _context.Perifericos.Any(e => e.ID == id);
+        }
 
     }
 }

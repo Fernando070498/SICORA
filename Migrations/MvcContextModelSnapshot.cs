@@ -20,7 +20,7 @@ namespace SICORA.Migrations
 
             modelBuilder.Entity("SICORA.Models.Juegos", b =>
                 {
-                    b.Property<string>("ID")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Desc_juego");
@@ -40,7 +40,7 @@ namespace SICORA.Migrations
 
             modelBuilder.Entity("SICORA.Models.Perifericos", b =>
                 {
-                    b.Property<string>("ID")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Desc_perifericos");
@@ -58,7 +58,7 @@ namespace SICORA.Migrations
 
             modelBuilder.Entity("SICORA.Models.Programas", b =>
                 {
-                    b.Property<string>("ID")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Desc_programa");
@@ -76,7 +76,7 @@ namespace SICORA.Migrations
 
             modelBuilder.Entity("SICORA.Models.Prueba_bd", b =>
                 {
-                    b.Property<string>("ID")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Desc_juego");

@@ -10,8 +10,8 @@ using System;
 namespace SICORA.Migrations
 {
     [DbContext(typeof(MvcContext))]
-    [Migration("20181106011545_initial")]
-    partial class initial
+    [Migration("20181110215447_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,7 +21,7 @@ namespace SICORA.Migrations
 
             modelBuilder.Entity("SICORA.Models.Juegos", b =>
                 {
-                    b.Property<string>("ID")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Desc_juego");
@@ -41,7 +41,7 @@ namespace SICORA.Migrations
 
             modelBuilder.Entity("SICORA.Models.Perifericos", b =>
                 {
-                    b.Property<string>("ID")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Desc_perifericos");
@@ -59,7 +59,7 @@ namespace SICORA.Migrations
 
             modelBuilder.Entity("SICORA.Models.Programas", b =>
                 {
-                    b.Property<string>("ID")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Desc_programa");
@@ -77,7 +77,7 @@ namespace SICORA.Migrations
 
             modelBuilder.Entity("SICORA.Models.Prueba_bd", b =>
                 {
-                    b.Property<string>("ID")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Desc_juego");

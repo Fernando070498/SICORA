@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace SICORA.Migrations
 {
-    public partial class initial : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,7 +12,8 @@ namespace SICORA.Migrations
                 name: "Juegos",
                 columns: table => new
                 {
-                    ID = table.Column<string>(nullable: false),
+                    ID = table.Column<int>(nullable: false)
+                        .Annotation("MySQL:AutoIncrement", true),
                     Desc_juego = table.Column<string>(nullable: true),
                     Img_juego = table.Column<string>(nullable: true),
                     Nom_juego = table.Column<string>(nullable: true),
@@ -28,7 +29,8 @@ namespace SICORA.Migrations
                 name: "Perifericos",
                 columns: table => new
                 {
-                    ID = table.Column<string>(nullable: false),
+                    ID = table.Column<int>(nullable: false)
+                        .Annotation("MySQL:AutoIncrement", true),
                     Desc_perifericos = table.Column<string>(nullable: true),
                     Img_perifericos = table.Column<string>(nullable: true),
                     Nom_perifericos = table.Column<string>(nullable: true),
@@ -43,7 +45,8 @@ namespace SICORA.Migrations
                 name: "Programas",
                 columns: table => new
                 {
-                    ID = table.Column<string>(nullable: false),
+                    ID = table.Column<int>(nullable: false)
+                        .Annotation("MySQL:AutoIncrement", true),
                     Desc_programa = table.Column<string>(nullable: true),
                     Img_programa = table.Column<string>(nullable: true),
                     Nom_programa = table.Column<string>(nullable: true),
@@ -58,7 +61,8 @@ namespace SICORA.Migrations
                 name: "Prueba_bd",
                 columns: table => new
                 {
-                    ID = table.Column<string>(nullable: false),
+                    ID = table.Column<int>(nullable: false)
+                        .Annotation("MySQL:AutoIncrement", true),
                     Desc_juego = table.Column<string>(nullable: true),
                     Imagen_juego = table.Column<string>(nullable: true),
                     Nom_juego = table.Column<string>(nullable: true),

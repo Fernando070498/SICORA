@@ -1,0 +1,45 @@
+@model SICORA.Models.Perifericos
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Quieres eliminar esta seccion?</h3>
+<div>
+    <h4>Juegos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom_perifericos)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nom_perifericos)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Desc_perifericos)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Desc_perifericos)
+        </dd>        
+        <dt>
+            @Html.DisplayNameFor(model => model.Img_perifericos)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Img_perifericos)
+        </dd>
+         <dt>
+            @Html.DisplayNameFor(model => model.pre_perifericos)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.pre_perifericos)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete_Per">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Mostrar_juegos" class="btn btn-default">Back to List</a>
+    </form>
+</div>

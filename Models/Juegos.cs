@@ -6,7 +6,7 @@ namespace SICORA.Models
 {
     public class Juegos
     {
-        public string ID { get; set;}
+        public int ID { get; set;}
         public string Nom_juego {get; set;}
         public string Desc_juego {get; set;}
         public string Img_juego {get; set;}
